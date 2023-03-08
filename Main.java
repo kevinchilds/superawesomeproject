@@ -16,9 +16,9 @@ public class Main {
                 running = false;
 
                 if(num % 2 == 0){
-                    System.out.println("Even");
+                    System.out.println("The number " + num + " is even");
                 }else{
-                    System.out.println("Odd");
+                    System.out.println("The number " + num + " is odd");
                 }
             }catch(Exception e){
                 System.out.println("invalid input...");
