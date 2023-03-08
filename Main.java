@@ -4,24 +4,28 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a num: ");
-
-        String input = sc.nextLine();
-
+        boolean running = true;
         int num;
+        while(running){
+            System.out.print("Enter a num: ");
 
-        try{
-            num = Integer.parseInt(input);
-        }catch(Exception e){
-            System.out.println("invalid input...");
-            return;
-        }
-        
-        if(num % 2 == 0){
-            System.out.println("Even");
-        }else{
-            System.out.println("Odd");
-        }
+            String input = sc.nextLine();
+
+            try{
+                num = Integer.parseInt(input);
+                running = false;
+
+                if(num % 2 == 0){
+                    System.out.println("Even");
+                }else{
+                    System.out.println("Odd");
+                }
+            }catch(Exception e){
+                System.out.println("invalid input...");
+                continue;
+            }
+        }        
+       
 
     }
 }
