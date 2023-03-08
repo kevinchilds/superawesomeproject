@@ -15,10 +15,11 @@ public class Main {
                 num = Integer.parseInt(input);
                 running = false;
 
+                System.out.println("The number " + num);
                 if(num % 2 == 0){
-                    System.out.println("Even");
+                    System.out.println(" is even");
                 }else{
-                    System.out.println("Odd");
+                    System.out.println(" is odd");
                 }
             }catch(Exception e){
                 System.out.println("invalid input...");
