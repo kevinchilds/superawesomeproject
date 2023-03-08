@@ -8,7 +8,7 @@ public class Main {
         int num;
         while(running){
             System.out.print("Enter a num: ");
-
+            //this is my comment
             String input = sc.nextLine();
 
             try{
